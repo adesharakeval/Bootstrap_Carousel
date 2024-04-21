@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="jquery-1.11.3.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+    <style>
+        .carousel-inner .item img{
+             width: 100%;
+            height:230px !important;
+            margin:auto;
+                   }
+
+         .overlay { 
+           color:#fff;
+           position:absolute;
+           z-index:12;
+           top:15%;
+           left:15%;
+           width:auto;
+           text-align:center;
+           background-color:rgba(96, 219, 12, 0.87);
+           padding:5px 10px 5px 10px;
+                  }
+
+          div h2{
+           font-size:15px;
+       }
+
+        @media(min-width:768px) {
+            .carousel-inner .item img {
+                height: 400px !important;
+            }
+              .overlay { 
+          
+            top:25%;
+           left:15%;
+           }
+               div h2{
+           font-size:40px;
+       }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+                <li data-target="#myCarousel" data-slide-to="6"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+                <div class="overlay">
+                    <h2>Beautiful Bridges</h2>
+                </div>
+                <div class="item active">
+                    <img src="images/1.JPG" class="img-responsive" />
+                    <div class="carousel-caption">
+                        <h3>Hi this is first image</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/2.JPG" class="img-responsive" />
+                    <div class="carousel-caption">
+                        <h3>Hi this is second images</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/3.JPG" class="img-responsive" />
+                    <div class="carousel-caption">
+                        <h3>Hi this is third images</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/4.JPG" class="img-responsive" />
+                    <div class="carousel-caption">
+                        <h3>Hi this is fourth images</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/5.JPG" class="img-responsive" />
+                    <div class="carousel-caption">
+                        <h3>Hi this is fifth images</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/6.JPG" class="img-responsive" />
+                    <div class="carousel-caption">
+                        <h3>Hi this is sixth images</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/7.JPG" class="img-responsive" />
+                    <div class="carousel-caption">
+                        <h3>Hi this is seventh images</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
